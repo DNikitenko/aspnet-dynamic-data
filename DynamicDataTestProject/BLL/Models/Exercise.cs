@@ -27,7 +27,7 @@ namespace DynamicDataTestProject.BLL.Models
         /// <summary>
         /// Contains detailed explanation of exercise
         /// </summary>
-        [Display(Order = 3)]
+        [Display(Order = 4)]
         public string Description { get; set; }
 
         /// <summary>
@@ -35,5 +35,11 @@ namespace DynamicDataTestProject.BLL.Models
         /// </summary>
         [Min(0), Display(Order = 2, Name = "World record")]
         public double WorldRecord { get; set; }
+
+        /// <summary>
+        /// Measurement unit for value
+        /// </summary>
+        [Display(Order = 3)]
+        public virtual MeasurementUnit MeasurementUnit { get; set; }
     }
 }

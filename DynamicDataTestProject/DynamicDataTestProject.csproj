@@ -85,6 +85,7 @@
     <Content Include="Default.aspx" />
     <Compile Include="BLL\Models\Exercise.cs" />
     <Compile Include="BLL\Models\ExerciseResult.cs" />
+    <Compile Include="BLL\Models\MeasurementUnit.cs" />
     <Compile Include="BLL\MyProgressDatabase.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

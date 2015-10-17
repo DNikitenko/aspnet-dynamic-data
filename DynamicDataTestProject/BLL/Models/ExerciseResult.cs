@@ -1,6 +1,7 @@
 ﻿using DataAnnotationsExtensions;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace DynamicDataTestProject.BLL.Models
     /// <summary>
     /// An instance of result for concrete training session
     /// </summary>
+    [DisplayName("Exercise results")]
     public class ExerciseResult
     {
         /// <summary>
@@ -27,17 +29,18 @@ namespace DynamicDataTestProject.BLL.Models
         /// <summary>
         /// Date when result has been established
         /// </summary>
-        [Required]
+        [Required, Display(Name = "Date performed"), DataType(DataType.Date)]
         public DateTime DatePerformed { get; set; }
-
-        /// <summary>
-        /// Related exercise ID
-        /// </summary>
-        public int ExerciseID { get; set; }
 
         /// <summary>
         /// Related exercise object
         /// </summary>
         public virtual Exercise Exercise { get; set; }
+
+        /// <summary>
+        /// Measurement unit for value
+        /// </summary>
+        /// 
+        public virtual MeasurementUnit MeasurementUnit { get; set; }
     }
 }
