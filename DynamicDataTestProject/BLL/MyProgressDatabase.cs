@@ -16,5 +16,10 @@ namespace DynamicDataTestProject.BLL
         /// A set of exercises stored in MyProgressDatabase
         /// </summary>
         public DbSet<Exercise> Exercises { get; set; }
+
+        /// <summary>
+        /// A set of exercise results stored in MyProgressDatabase
+        /// </summary>
+        public DbSet<ExerciseResult> ExerciseResults { get; set; }
     }
 }

@@ -21,18 +21,19 @@ namespace DynamicDataTestProject.BLL.Models
         /// <summary>
         /// Exercise's name
         /// </summary>
-        [Required]
+        [Required, DataType(DataType.Text), Display(Order = 1)]
         public string Name { get; set; }
 
         /// <summary>
         /// Contains detailed explanation of exercise
         /// </summary>
+        [Display(Order = 3)]
         public string Description { get; set; }
 
         /// <summary>
         /// Absolute record had been set up to the moment
         /// </summary>
-        [Min(0)]
+        [Min(0), Display(Order = 2, Name = "World record")]
         public double WorldRecord { get; set; }
     }
 }

@@ -84,6 +84,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Compile Include="BLL\Models\Exercise.cs" />
+    <Compile Include="BLL\Models\ExerciseResult.cs" />
     <Compile Include="BLL\MyProgressDatabase.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -93,14 +94,14 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Content Include="Global.asax" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Site.css" />
     <Content Include="Site.master" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Site.master.cs">
       <DependentUpon>Site.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
